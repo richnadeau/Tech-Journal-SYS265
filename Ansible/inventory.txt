@@ -1,0 +1,12 @@
+[cockpit]
+ansible1-rich
+[webmin]
+ansible2-rich
+[windows]
+mgmt01-rich
+[windows:vars]
+ansible_user=rich.nadeau-adm@rich.local
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_transport=ntlm
+ansible_winrm_port=5986
